@@ -7,6 +7,7 @@
     <title>Hi! I'm Victor Calzon</title>
     <style>
         :root {
+            --font-big: 2.2rem;
             --font-regular: 1.8rem;
             --font-small: 1.6rem;
         }
@@ -39,20 +40,28 @@
         }
         .content {
             max-width: 40rem;
-            margin: 2rem;
+            margin: 0 auto;
+            padding: 2rem;
         }
         .external-links {
             font-size: var(--font-small);
+            margin-top: 2rem;
         }
         .title {
-            font-size: var(--font-regular);
+            font-size: var(--font-big);
             font-weight: inherit;
+            margin: 0 0 1rem;
         }
         .nav-title {
             font-size: var(--font-small);
             font-weight: inherit;
+            margin: 0 0 .6rem;
+        }
+        .title::before, .nav-title::before {
+            content: "> ";
         }
         .adventure-time {
+            font-size: var(--font-small);
             text-align: right;
             margin-top: 4rem;
         }
@@ -61,10 +70,11 @@
 <body>
     <div class="content">    
         <main>
-            <h1 class="title">Hi there!</h1>I'm Victor and I've been around for a while doing applications and websites, both big and small. 
-            I like boxing, guitars, Sci-Fi and videogames, you may know me as the former <del>webmaster</del> <ins>technical operator</ins> of <a href="https://www.anaitgames.com">anaitgames</a>.<br />
-            I'm currently rocking as Principal Engineer 🎸 at <a href="https://www.packlink.com/">Packlink</a>.<br />
-            Find more about me in my <a href="https://www.getmanfred.com/profile/victorcalzon">curriculum</a>, in <a href="https://github.com/kungfunk">Github</a>, <a href="https://www.linkedin.com/in/victor-calzon-55847916">Linkedin</a>, <a href="">Twitter</a> or just mail me at <a href="mailto:victor@victorcalzon.com">victor@victorcalzon.com</a>.
+            <h1 class="title">Hi there!</h1>
+            <p>I'm Victor and I've been around for a while doing applications and websites, both big and small.<br /> 
+            I like boxing, guitars, Sci-Fi and videogames, you may know me as the former <del>webmaster</del> <ins>technical operator</ins> of <a href="https://www.anaitgames.com">anaitgames</a>.</p>
+            <p>I'm currently rocking as Principal Engineer at <a href="https://www.packlink.com/">Packlink</a> 🎸.<br />
+            You can find more about me in my <a href="https://www.getmanfred.com/profile/victorcalzon">curriculum</a>, in <a href="https://github.com/kungfunk">Github</a>, <a href="https://www.linkedin.com/in/victor-calzon-55847916">Linkedin</a>, <a href="https://twitter.com/kungfunk">Twitter</a> or just mail me at <a href="mailto:victor@victorcalzon.com">victor@victorcalzon.com</a>.</p>
         </main>
         <nav class="external-links">
             <h2 class="nav-title">Side projects</h2>
@@ -73,6 +83,8 @@
                 <li><del>gumatube</del></li>
                 <li>relatos.victorcalzon.com</li>
             </ul>
+        </nav>
+        <nav class="external-links">
             <h2 class="nav-title">Oldies</h2>
             <ul>
                 <li><a href="/oldies/anait">Anaitgames</a> MK3 (2015 never released)</li>
