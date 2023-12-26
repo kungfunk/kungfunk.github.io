@@ -7,26 +7,27 @@
     <meta name="description" content="Hi, I'm Victor Calzon, software engineer. Passionate about tech, boxing and dark souls!">
     <title>Hi, I'm Victor Calzon</title>
     <style>
-        :root {
-            --font-big: 2.2rem;
-            --font-regular: 1.8rem;
-            --font-small: 1.6rem;
-            --color-accent: #2196f3;
-        }
-        html {
-            font-size: 62.5%;
-        }
         body {
-            font-size: var(--font-regular);
-            font-family: monospace;
-            padding: 0;
-            margin: 0;
+            box-sizing: border-box;
+            font-size: 1.2rem;
+            line-height: 1.25;
+            max-width: 500px;
+            min-height: 100vh;
+            font-family: serif;
+            padding: 1rem;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+        h1::before,
+        h2::before {
+            content: "> ";
         }
         a {
-            color: var(--color-accent);
+            color: #2196f3;
         }
         a:visited {
-            color: var(--color-accent);
+            color: #2196f3;
         }
         ins {
             text-decoration: none;
@@ -40,56 +41,32 @@
         li::before {
             content: "[x] ";
         }
-        .content {
-            max-width: 40rem;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-        .external-links {
-            font-size: var(--font-small);
-            margin-top: 2rem;
-        }
-        .title {
-            font-size: var(--font-big);
-            font-weight: inherit;
-            margin: 0 0 1rem;
-        }
-        .nav-title {
-            font-size: var(--font-small);
-            font-weight: inherit;
-            margin: 0 0 .6rem;
-        }
-        .title::before, .nav-title::before {
-            content: "> ";
-        }
-        .adventure-time {
-            font-family: serif;
-            font-size: var(--font-small);
-            text-align: right;
-            margin-top: 4rem;
+        footer {
+            flex: 1;
+            display: flex;
+            align-items: end;
+            justify-content: end;
         }
     </style>
 </head>
-<body>
-    <div class="content">    
-        <main>
-            <h1 class="title">Hi there!</h1>
-            <p>I'm Victor and I've been around for a while doing applications and websites, both big and small.<br /> I love boxing, guitars, sci-fi and videogames (I´m a big <span title="praise the sun">dark souls</span> fan!).</p>
-            <p>I'm currently rocking as Principal Engineer at <a href="https://www.packlink.com/">Packlink</a> 🎸 but you may know me as the former <del>webmaster</del> <ins>technical operator</ins> of <a href="https://www.anaitgames.com">anaitgames</a>.</p>
-            <p>You can find more about me in my <a href="https://www.getmanfred.com/profile/victorcalzon">curriculum</a>, in <a href="https://github.com/kungfunk">Github</a>, <a href="https://www.linkedin.com/in/victor-calzon-55847916">Linkedin</a>, <a href="https://twitter.com/kungfunk">Twitter</a> or just mail me at <a href="mailto:victor@victorcalzon.com">victor@victorcalzon.com</a>.</p>
-        </main>
-        <nav class="external-links">
-            <h2 class="nav-title">Side projects</h2>
-            <ul>
-                <li><a href="https://todo.victorcalzon.com">daily-todo</a></li>
-                <li><a href="https://relatos.victorcalzon.com">relatos.victorcalzon.com</a></li>
-            </ul>
-        </nav>
-        <footer class="adventure-time">
-            | (• ◡•)|╯╰(❍ᴥ❍ʋ)
-        </footer>
-    </div>
+<body>  
+    <main>
+        <h1>Hi there!</h1>
+        <p>I'm Victor and I've been around for a while doing websites and applications, both big and small.<br /> I love boxing, guitars, sci-fi and videogames (I'm a big <span title="praise the sun">dark souls</span> fan!).</p>
+        <p>I'm currently rocking as Principal Engineer at <a href="https://www.packlink.com/">Packlink</a> 🎸 but you may know me as the former <del>webmaster</del> <ins>technical operator</ins> of <a href="https://www.anaitgames.com">anaitgames</a>.</p>
+        <p>You can find more about me in my <a href="https://www.getmanfred.com/profile/victorcalzon">curriculum</a>, in <a href="https://github.com/kungfunk">Github</a>, <a href="https://www.linkedin.com/in/victor-calzon-55847916">Linkedin</a>, <a href="https://twitter.com/kungfunk">Twitter</a> or just mail me at <a href="mailto:victor@victorcalzon.com">victor@victorcalzon.com</a> and ask.</p>
+    </main>
+    <nav>
+        <h2>Side projects</h2>
+        <ul>
+            <li><a href="https://todo.victorcalzon.com">daily-todo</a></li>
+            <li><a href="https://relatos.victorcalzon.com">relatos.victorcalzon.com</a></li>
+        </ul>
+    </nav>
+    <footer>
+        | (• ◡•)|╯╰(❍ᴥ❍ʋ)
+    </footer>
     <script async defer data-website-id="7b7b533b-9147-4780-a979-b6742dfcc5c8" src="https://analytics.victorcalzon.com/umami.js"></script>
 </body>
 </html>
-<!-- made with vs code, html, css, git, github pages and ❤️ -->
+<!-- made with vscode, html, css, git, github pages and ❤️ -->
