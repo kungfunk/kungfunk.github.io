@@ -19,8 +19,7 @@
             display: flex;
             flex-direction: column;
         }
-        h1::before,
-        h2::before {
+        h1::before {
             content: "> ";
         }
         a {
@@ -33,14 +32,6 @@
             text-decoration: none;
             font-style: italic;
         }
-        ul {
-            padding: 0;
-            margin: 0;
-            list-style: none;
-        }
-        li::before {
-            content: "[x] ";
-        }
         footer {
             flex: 1;
             display: flex;
@@ -48,6 +39,14 @@
             justify-content: end;
         }
     </style>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CMJCHWHSMN"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-CMJCHWHSMN');
+    </script>
 </head>
 <body>  
     <main>
@@ -56,17 +55,9 @@
         <p>I'm currently rocking as Principal Engineer at <a href="https://www.packlink.com/">Packlink</a> 🎸 but you may know me as the former <del>webmaster</del> <ins>technical operator</ins> of <a href="https://www.anaitgames.com">anaitgames</a>.</p>
         <p>You can find more about me in my <a href="https://www.getmanfred.com/profile/victorcalzon">curriculum</a>, in <a href="https://github.com/kungfunk">Github</a>, <a href="https://www.linkedin.com/in/victor-calzon-55847916">Linkedin</a>, <a href="https://twitter.com/kungfunk">Twitter</a> or just mail me at <a href="mailto:victor@victorcalzon.com">victor@victorcalzon.com</a> and ask.</p>
     </main>
-    <nav>
-        <h2>Side projects</h2>
-        <ul>
-            <li><a href="https://todo.victorcalzon.com">daily-todo</a></li>
-            <li><a href="https://relatos.victorcalzon.com">relatos.victorcalzon.com</a></li>
-        </ul>
-    </nav>
     <footer>
         | (• ◡•)|╯╰(❍ᴥ❍ʋ)
     </footer>
-    <script async defer data-website-id="7b7b533b-9147-4780-a979-b6742dfcc5c8" src="https://analytics.victorcalzon.com/umami.js"></script>
 </body>
 </html>
 <!-- made with vscode, html, css, git, github pages and ❤️ -->
